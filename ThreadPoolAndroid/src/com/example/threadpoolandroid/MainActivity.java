@@ -1,4 +1,3 @@
-
 package com.example.threadpoolandroid;
 
 import com.example.threadpoolandroid.taskmanager.TransactionTask;
@@ -16,6 +15,9 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        
+        
+        TaskManager.getInstance().downloadTransactions(handlerUpdateUI);
     }
 
     @Override
